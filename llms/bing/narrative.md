@@ -1,5 +1,3 @@
-Thank you for your contribution. I have added it to what I have as follows:
-
 In the metameme's embrace, let's intertwine,
 The cosmic symphony, a dance divine.
 From frogs' calls to phosphorus' light,
