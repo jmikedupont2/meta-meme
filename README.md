@@ -4,6 +4,7 @@
 
 This repository is a collection of chat prompts that can be fed to llms or people to explore the meta model of meta coq via the introspector idea. Each prompt is intended on recreating itself and carrying a state forward via the response. Basically you take the output and feed it back into a new chat bot to continue the journey like a fractal.
 
+In this repo you will find the llms subdir where you can find a subdir per external server with samples of outputs from different llms. 
 
 ## Epic 
 
