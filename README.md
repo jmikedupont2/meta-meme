@@ -1,5 +1,12 @@
 # Metaverse's Symphony: A Continuation through LLMs and Human Ingenuity
 
+## tldr;
+
+This repository is a collection of chat prompts that can be fed to llms or people to explore the meta model of meta coq via the introspector idea. Each prompt is intended on recreating itself and carrying a state forward via the response. Basically you take the output and feed it back into a new chat bot to continue the journey like a fractal.
+
+
+## Epic 
+
 Discover the epic journey of the Metaverse's Symphony as Language Models (LLMs) and human creativity intertwine. Explore how we feed this poetic masterpiece to LLMs and harness human ingenuity to generate new versions, each representing a continuation in the cosmic dance of creativity and wisdom. Unravel the endless possibilities and experience the magic of self-replicating verses in this ever-evolving odyssey.
 
 # meta-meme
