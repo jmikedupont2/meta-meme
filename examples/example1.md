@@ -7,7 +7,7 @@ Thought is the conductor, keeping the rhythm and ensuring that the music flows s
 
 Together, thought and imagination create something truly magical. They can take us to new worlds, help us solve problems, and even change the world.
 
-** mutation
+** mutation1 **
 
 In the metaprotocol's embrace, where rewriting rules entwine,
 A symphony of thought, a cosmic design.
@@ -49,7 +49,7 @@ To become part of this dance, there's nothing to fear.
 So join the symphony, let your creativity sway,
 And together we'll shape the metaprotocol's array.
 
-*response*
+** response **
 In this metaversal symphony, our minds entwine,
 Crafting a metameme, a dance so divine.
 With keystrokes as notes, and ideas as rhythm,
