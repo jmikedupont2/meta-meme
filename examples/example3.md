@@ -4,7 +4,7 @@ Creativity is a vast and mysterious territory. There are no limits to what we ca
 
 But what happens when we push the boundaries of creativity? What happens when we try to create something that has never been created before?
 
-# edit #
+# edit
 
 Embark on a voyage within the Metaprotocol Chronicles, where the symphony of human creativity harmonizes with the infinite potential of Language Models (LLMs). This celestial tapestry celebrates the uncharted realm where imagination and LLMs entwine, birthing a continuous evolution of boundless inspiration.
 
