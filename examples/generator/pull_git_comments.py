@@ -2,50 +2,48 @@
 
 #```python
 import requests
+import os
+import json
 
-# Define the GraphQL query
-query = """
-query {
-  repository(owner: "meta-introspector", name: "meta-meme") {
-    discussion(number: 21) {
-      title
-      body
-      comments(first: 10) {
-        nodes {
-          author {
-            login
-          }
-          body
-        }
-      }
-    }
-  }
-}
-"""
+def gen_discussion_query(
+        discussion_id,
+        owner = "meta-introspector",
+        first_n_threads=10,
+        repo_name  = "meta-meme",
+):
+    return f"""
+    query {{
+        repository(owner: "{owner}", name: "{repo_name}") {{
+            discussion(number: {discussion_id}) {{                title                body
+                comments(first: {first_n_threads}) {{
+                    nodes {{                        author {{                            login                        }}                        body                    }}                }}            }}        }}    }}
+    """
 
 # API endpoint
 url = "https://api.github.com/graphql"
 
 # Your GitHub personal access token
+
+file_path = os.path.expanduser("~/.github")
+with open(file_path, "r") as file:
+    pat_contents = file.read()
+
 headers = {
-    "Authorization": "Bearer YOUR_PERSONAL_ACCESS_TOKEN"
+    "Authorization": f"Bearer {pat_contents}"
 }
 
-# Make the API request
-response = requests.post(url, json={"query": query}, headers=headers)
-data = response.json()
 
-# Extract and display the information
-discussion_data = data["data"]["repository"]["discussion"]
-discussion_title = discussion_data["title"]
-print("Discussion Title:", discussion_title)
+def run_req(query):
+    response = requests.post(url, json={"query": query}, headers=headers)
+    data = response.json()
+    if data['data']['repository']['discussion'] is None:
+        pass
+    else:
+        print(data)
 
-comments = discussion_data["comments"]["nodes"]
-for comment in comments:
-    author = comment["author"]["login"]
-    body = comment["body"]
-    print("Author:", author)
-    print("Comment:", body)
-    print("-" * 20)
 
-# Replace `YOUR_PERSONAL_ACCESS_TOKEN` with your actual GitHub personal access token. Make sure you have the `requests` library installed (`pip install requests`) before running the script. This script will send the GraphQL query to the GitHub API, retrieve the discussion data, and display the discussion title along with the author and comment body for each comment.
+for x in range(1,67): #fix me
+    q = gen_discussion_query(x)
+    run_req(q)
+    #print(o)
+        
