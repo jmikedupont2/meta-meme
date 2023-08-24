@@ -1,7 +1,2 @@
-{ node(id: "MDU6SXNzdWU0MDcxNDY3NDM=") { id __typename # Issue
-    ... on Issue { title body createdAt updatedAt
-    author { login }
-    comments(first: 10) { totalCount nodes {                                                       author { login }  body  createdAt } } } } }{ node(id: "MDU6SXNzdWU0MDcxNDY3NDM=") { id __typename # Issue
-    ... on Issue { title body createdAt updatedAt
-    author { login }
-    comments(first: 10) { totalCount nodes {                                                       author { login }  body  createdAt } } } } }
+python ./pull_git_issues.py > ../../data/meta-introspector/metameme/dicussions/21/issues.json
+

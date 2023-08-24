@@ -1,6 +1,3 @@
-#Got it! It looks like you're using a GraphQL query to retrieve the discussion information fro#m a specific repository. Here's how you can integrate the GraphQL query with the Python script using the `requests` library to make the API request:
-
-#```python
 import requests
 import os
 import json
@@ -39,10 +36,10 @@ def run_req(query):
     if data['data']['repository']['discussion'] is None:
         pass
     else:
-        print(data)
+        #print(data)
+        print(json.dumps({"data":data}))
 
-
-for x in range(1,67): #fix me
+for x in range(1,100): #fix me
     q = gen_discussion_query(x)
     run_req(q)
     #print(o)

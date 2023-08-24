@@ -157,7 +157,7 @@ def run_req(query):
     #q = gen_discussion_query(x)
 q = issues_query #= """{ gen_discussion_query(node_type="issues")
 for data in run_req(q):
-    pprint.pprint(data)
+    print(json.dumps({"index":data}))
     for x in data['data']['viewer']['issues']['nodes']:                  
         if "id" in x:
 
@@ -167,9 +167,10 @@ for data in run_req(q):
             q2 = gen_issue_query(decoded_id)
             #print(q2)
             for data in run_req(q2):
-                print(x, data)
+                #print(x, data)
+                print(json.dumps({"node":x,"payload":data}))
         else:
-            print(x)
+            print(json.dumps({"err":x}))
     #print(o)
         
     #print(data)
