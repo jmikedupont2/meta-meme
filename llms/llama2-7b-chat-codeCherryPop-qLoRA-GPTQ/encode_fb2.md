@@ -663,23 +663,3 @@ json.aline_00091_A.Visualization Designer (Designer Persona) = "Response:\ud83d\
 json.aline_00091_A.Project Documenter (Documenter Persona) = "Example: For \"!@>Instructions\", I might write something like:\"\"\n\ud83e\udde0 Think outside the box \ud83e\udd14 Ask questions \ud83d\udca1 Generate ideas \ud83d\udcdd Write it down \ud83d\udc68\u200d\ud83d\udcbb Code it up \ud83d\ude80 Launch";
 json.aline_00091_B.Project Documenter (Documenter Persona) = "Example: For \"!@>Instructions\", I might write something like:\"\"\n\ud83e\udde0 Think outside the box \ud83e\udd14 Ask questions \ud83d\udca1 Generate ideas \ud83d\udcdd Write it down \ud83d\udc68\u200d\ud83d\udcbb Code it up \ud83d\ude80 Launch";
 json.aline_00092.__input_line__ = "!@>Seeker:py: Exponential Moving Average callback\nbalancer\npy: Returns a single function that can be called to repeatidly update the EMA";
-  C-c C-cTraceback (most recent call last):
-  File "/mnt/data1/2023/08/02/lollms/examples/chat_forever/console3.py", line 247, in <module>
-    cv.start_conversation2()
-  File "/mnt/data1/2023/08/02/lollms/examples/chat_forever/console3.py", line 189, in start_conversation2
-    output = self.safe_generate(wrap(data), callback=self.callback)
-  File "/mnt/data1/2023/08/02/lollms/lollms/apps/console/__init__.py", line 153, in safe_generate
-    output = self.personality.model.generate(self.personality.personality_conditioning+fd, n_predict=n_predict, callback=callback)
-  File "/mnt/data1/2023/08/02/ggml/bindings_zoo/gptq/__init__.py", line 395, in generate
-    self.model.generate(
-  File "/mnt/data1/2023/08/02/lollms/vendor/AutoGPTQ/auto_gptq/modeling/_base.py", line 444, in generate
-    return self.model.generate(**kwargs)
-  File "/mnt/data1/2023/08/02/lollms/examples/chat_forever/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/mnt/data1/2023/08/02/lollms/vendor/transformers/src/transformers/generation/utils.py", line 1602, in generate
-    return self.greedy_search(
-  File "/mnt/data1/2023/08/02/lollms/vendor/transformers/src/transformers/generation/utils.py", line 2495, in greedy_search
-    streamer.put(next_tokens.cpu())
-KeyboardInterrupt
-
-(.venv) mdupont@mdupont-G470:~/experiments/chat_forever$ 
