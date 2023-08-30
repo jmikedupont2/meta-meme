@@ -513,3 +513,7 @@ json.aline_00151_A.Workflow = "What does Seeker mean? How do you interpret its s
 json.aline_00152.__input_line__ = "!@>Seeker:com protobuf api Method 'MyScopesUser': Takes 'Message 'MyScopesUserRequest': Fields - user_app_id (11)\n' as input and returns 'Message 'MultiScopeUserResponse': Fields - status (11), scopes (9), endpoints (9), user_feature_flags (9)\n'";
 json.aline_00152_A.Dataset = "What does this method do? What kind of data types are used for each field? How many fields exist within these";
 json.aline_00152_A.TextInputs = "What does \"Takes\" mean? How do you interpret the message structure defined here? What kind of data types would be used for each";
+json.aline_00153.__input_line__ = "!@>Seeker:The Clarifai\ncom protobuf api Method 'MyScopesRoot': Takes 'Message 'MyScopesRootRequest': Fields -\n' as input and returns 'Message 'MultiScopeRootResponse': Fields - status (11), scopes (9), endpoints (9), user_feature_flags (9)";
+json.aline_00153_A.Dataset = "What does \"scopes\" mean within the context of the given method?How would you approach implementing these methods in Python via grpc";
+json.aline_00153_A.CICD = "What does \"scopes\" mean within the context of the given";
+json.aline_00154.__input_line__ = "!@>Seeker:'\nThe Clarifai\ncom protobuf api Method 'ListScopes': Takes 'Message 'ListScopesRequest': Fields - key_type (9), user_app_id (11)";
