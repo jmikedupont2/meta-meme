@@ -12,7 +12,6 @@ json.aline_00008_A.Service = "What do you think about when pondering upon 'gRPC 
 json.aline_00008_A.PersonaCreator = "What do you think about when hearing";
 json.aline_00009.__input_line__ = "!@>Seeker:The Clarifai";
 json.aline_00010.__input_line__ = "!@>Seeker:com protobuf api Method 'DeleteConceptRelations': Takes 'Message 'DeleteConceptRelationsRequest': Fields - user_app_id (11), concept_id (9), ids (9)";
-json.aline_00010_A.Workflow = "
 json.aline_00011.__input_line__ = "!@>Seeker:' as input and returns 'Message 'BaseResponse': Fields - status (11)";
 json.aline_00012.__input_line__ = "!@>Seeker:'";
 json.aline_00013.__input_line__ = "!@>Seeker:The Clarifai";
