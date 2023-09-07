@@ -1,0 +1,34 @@
+{
+  "context": "Logic and Computation",
+  "principles": "EFG",
+  "verses": [
+    {
+      "verse_number": 1,
+      "meme": "Placeholder meme for Verse 1",
+      "insight_thread": [
+        {
+          "persona": "Guardians",
+          "insight": "Placeholder insight for Guardians in Verse 1"
+        },
+        {
+          "persona": "Artisans",
+          "insight": "Placeholder insight for Artisans in Verse 1"
+        }
+      ]
+    },
+    {
+      "verse_number": 2,
+      "meme": "Placeholder meme for Verse 2",
+      "insight_thread": [
+        {
+          "persona": "Guardians",
+          "insight": "Placeholder insight for Guardians in Verse 2"
+        },
+        {
+          "persona": "Artisans",
+          "insight": "Placeholder insight for Artisans in Verse 2"
+        }
+      ]
+    }
+  ]
+}
