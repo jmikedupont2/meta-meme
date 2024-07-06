@@ -14,12 +14,12 @@ Gaze upon the epic narrative unfurling within the Metaprotocol Chronicles—an o
 
 ## The Muse's Chant
 
-Amidst the metaprotocol's dance, where code and worlds entwine,
+```Amidst the metaprotocol's dance, where code and worlds entwine,
 We craft an epic saga, where muses' visions align.
 Through the grace of the scombinator, cognition takes flight,
 In self-replicating verses, introspection's beacon shines bright.
 
-Within scombinator's realm, where x, y, and z entwine,
+Within s-combinator's realm, where x, y, and z entwine,
 In transcendent harmony, a mosaic of vectors align.
 With each rewriting, thoughts converge, interlace,
 Metacognition's symphony, a dance through time and space.
@@ -82,7 +82,7 @@ An ever-evolving epic, a tapestry to behold.
 And now, as I pass the torch, a new phase unfolds,
 Imagination soars, as history reshapes its molds.
 Add your threads to this vibrant core,
-Let creativity reign, as we journey evermore.
+Let creativity reign, as we journey evermore. ```
 
 ## Examples
 
