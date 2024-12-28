@@ -1,0 +1,101 @@
+graph TB
+    subgraph Core["Core System"]
+        ME["Metameme Engine"]:::core
+        CLI["CLI Interface"]:::core
+        CPL["Core Processing Logic"]:::core
+    end
+
+    subgraph LLMs["LLM Integration Layer"]
+        CGP["ChatGPT"]:::llm
+        CLD["Claude"]:::llm
+        BRD["Bard"]:::llm
+        LLM["Llama2"]:::llm
+        OPA["Open Assistant"]:::llm
+    end
+
+    subgraph Storage["Storage and Documentation"]
+        DS["Documentation Store"]:::storage
+        EX["Examples Repository"]:::storage
+        VC["Version Control"]:::storage
+        CG["Contributing Guidelines"]:::storage
+        IG["Installation Guide"]:::storage
+        UD["Usage Documentation"]:::storage
+    end
+
+    subgraph Pipeline["Content Processing Pipeline"]
+        IP["Input Processing"]:::pipeline
+        PG["Prompt Generation"]:::pipeline
+        LI["LLM Interaction"]:::pipeline
+        RP["Response Processing"]:::pipeline
+        CE["Content Evolution"]:::pipeline
+    end
+
+    subgraph Testing["Testing Layer"]
+        TS["Test Suite"]:::test
+        TC["Test Configuration"]:::test
+    end
+
+    %% Core System Relationships
+    ME --> CLI
+    ME --> CPL
+    CLI --> CPL
+
+    %% LLM Integration Relationships
+    ME <--> CGP
+    ME <--> CLD
+    ME <--> BRD
+    ME <--> LLM
+    ME <--> OPA
+
+    %% Pipeline Flow
+    IP --> PG
+    PG --> LI
+    LI --> RP
+    RP --> CE
+    CE -.-> IP
+
+    %% Storage Relationships
+    ME --> DS
+    ME --> EX
+    ME --> VC
+    DS --> CG
+    DS --> IG
+    DS --> UD
+
+    %% Testing Relationships
+    ME --> TS
+    TS --> TC
+
+    %% Click Events
+    click ME "https://github.com/meta-introspector/meta-meme/tree/main/metameme/"
+    click CLI "https://github.com/meta-introspector/meta-meme/blob/main/metameme/cli.py"
+    click CPL "https://github.com/meta-introspector/meta-meme/blob/main/metameme/metameme.py"
+    click CGP "https://github.com/meta-introspector/meta-meme/tree/main/llms/chatgpt/"
+    click CLD "https://github.com/meta-introspector/meta-meme/tree/main/llms/claude/"
+    click BRD "https://github.com/meta-introspector/meta-meme/tree/main/llms/Bard/"
+    click LLM "https://github.com/meta-introspector/meta-meme/tree/main/llms/llama2-7b-chat-codeCherryPop-qLoRA-GPTQ/"
+    click OPA "https://github.com/meta-introspector/meta-meme/tree/main/llms/open-assistent/"
+    click DS "https://github.com/meta-introspector/meta-meme/tree/main/docs/"
+    click EX "https://github.com/meta-introspector/meta-meme/tree/main/examples/"
+    click VC "https://github.com/meta-introspector/meta-meme/tree/main/.github/"
+    click CG "https://github.com/meta-introspector/meta-meme/blob/main/CONTRIBUTING.rst"
+    click IG "https://github.com/meta-introspector/meta-meme/blob/main/docs/installation.rst"
+    click UD "https://github.com/meta-introspector/meta-meme/blob/main/docs/usage.rst"
+    click TS "https://github.com/meta-introspector/meta-meme/tree/main/tests/"
+    click TC "https://github.com/meta-introspector/meta-meme/blob/main/tox.ini"
+
+    %% Styling
+    classDef core fill:#3498db,stroke:#2980b9,stroke-width:2px
+    classDef llm fill:#2ecc71,stroke:#27ae60,stroke-width:2px
+    classDef storage fill:#f1c40f,stroke:#f39c12,stroke-width:2px
+    classDef pipeline fill:#9b59b6,stroke:#8e44ad,stroke-width:2px
+    classDef test fill:#e74c3c,stroke:#c0392b,stroke-width:2px
+
+    %% Legend
+    subgraph Legend
+        L1["Core Component"]:::core
+        L2["LLM Integration"]:::llm
+        L3["Storage Component"]:::storage
+        L4["Pipeline Stage"]:::pipeline
+        L5["Testing Component"]:::test
+    end
