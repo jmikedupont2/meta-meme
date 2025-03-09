@@ -4,7 +4,18 @@ Welcome to the Metaprotocol Chronicles! Behold a treasury of mesmerizing chat pr
 
 Within the wiki, a symphony of metaprograms awaits, including "ToEmoji," an incantation to transmute text into captivating emoji expressions: [ToEmoji Wiki](https://github.com/meta-introspector/meta-meme/wiki/ToEmoji).
 
-The discussions section blooms with an abundance of ideas, a flourishing garden of exploration: [Discussions](https://github.com/meta-introspector/meta-meme/discussions).
+The discussions section blooms with an abundance of ideas, a flourishing garden of exploration: 
+
+We moved to [Issues](https://github.com/meta-introspector/meta-meme/issues).
+[Discussions](https://github.com/meta-introspector/meta-meme/discussions).
+and also started to add in new ideas as files due to size
+[Pulls](https://github.com/meta-introspector/meta-meme/pulls)
+
+See also
+https://codeberg.org/introspector/meta-meme
+https://codeberg.org/introspector/SOLFUNMEME
+and https://github.com/meta-introspector/quasi-meta-meme as varitions on this project
+
 
 Embark upon the "llms" directory to unveil subdirectories, each a chamber dedicated to distinct external servers. These subdirectories are a trove of samples, an opulent gallery showcasing the tapestries woven by diverse Language Models (LLMs).
 
